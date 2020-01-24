@@ -17,10 +17,17 @@ body{
     grid-gap: 20px;
 }
 
+figcaption{
+    font-size: .8rem;
+    color: rgb(120,120,120);
+}
+
 .ui {
     margin-left: 2.5%;
 }
-
+.ui a{
+    text-decoration: none;
+}
 .ui img{
     width: 32%;
     height: auto;
@@ -31,6 +38,16 @@ body{
     width: 49%;
     height: auto;
     box-shadow: darkgrey 1.5px 1.5px 3px;
+}
+
+.photo img{
+    width: 90%;
+    height: auto;
+}
+.photo p{
+    width: 90%;
+    height: auto;
+    text-align: left;
 }
 
 .job{
@@ -70,13 +87,21 @@ body{
     clear: left;
 }
 .float-right{
-    float:right;
+    float:left;
+    width: 60%;
+    height: auto;
 }
 .float-right img{
-    margin-right:-40px;
-    width:300px;
+    /*margin-right:-40px;*/
+    width:100%;
+    min-width: 400px;
     height:auto;
 }
+.float-right + section {
+    /* outline: 2px solid blue; */
+    display: block;
+}
+
 h1{
     font-size:1.6rem;
     font-weight: normal;
