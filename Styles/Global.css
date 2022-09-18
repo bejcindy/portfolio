@@ -158,6 +158,8 @@ figcaption{
     font-size: .9rem;
     text-indent: 0;
     text-align: center;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
     /*color: rgb(120,120,120);*/
 }
 h1 a{
