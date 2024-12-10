@@ -2,7 +2,8 @@
     background-color: white;
     font-size:18px;
     /*font-family:"Noto Sans", sans-serif;*/
-    font-family: "Lato", sans-serif;
+/*    font-family: "Lato", sans-serif;*/
+    font-family: "Comic Sans MS", cursive;
     height:100%;
     padding-right: 50px;
     padding-left: 50px;
@@ -10,13 +11,16 @@
 }
 body{
     /*margin:0 auto;*/
+/*    margin:20px;*/
+    margin: 0;
     padding: 20px;
     display: grid;
     font-weight: lighter;
     /*等图多了把minmax那边改成1fr之类的*/
-    grid-template-rows: auto minmax(640px,auto) auto;
+    grid-template-rows: 80px minmax(640px,auto) 40px;
     grid-template-columns: 180px auto;
-    grid-gap: 30px;
+    grid-gap: 0px 30px;
+    min-height: calc(100vh - 40px);
 }
 
 figcaption{
@@ -148,10 +152,53 @@ figcaption{
     min-width: 300px;
     box-shadow: darkgrey 1.5px 1.5px 3px;
 }
-.photo img{
-    width: 80%;
+
+.photo{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
+    padding-top: 30px;
+}
+
+.photo .photo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1/span 2;
+    width: 100%;
     height: auto;
     min-width: 250px;
+}
+
+.photo p{
+        margin: 0 auto 1em auto;
+}
+
+.photo a{
+    color:rgb(255,112,112);
+}
+
+.photo a:hover{
+    color:rgb(200,60,60);
+}
+
+@media screen and (max-width:1400px){
+    .photo{
+        display:flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .photo .photo-container{       
+        margin: auto; 
+        width: 80%;
+        height: auto;
+        min-width: 250px;
+    }
+    .photo p{
+        margin: 0 auto 1em auto;
+    }
 }
 
 .job p{
@@ -166,13 +213,16 @@ h1 a{
     color:rgb(255,112,112);
     /*text-decoration: none;*/
 }
+h1 a:hover{
+    color:rgb(200,60,60);
+}
 
 .italic{
     font-style: italic;
     color: rgb(120,120,120);
 }
 .float-figure {
-    /* outline: 2px solid red; */
+/*     outline: 2px solid red; */
     margin-left: 20px;
     width: 150px;
     float: left;
@@ -180,16 +230,16 @@ h1 a{
 }
 .float-figure img {
     width: 150px;
-    height: auto;
+    height: auto;    
 }
 .float-figure + section {
     /* outline: 2px solid blue; */
-    margin-left: 170px;
+    margin-left: 170px;    
 }
 .float-figure + section::after {
     content: "";
     display: block;
-    /* background-color: yellow; */
+/*     background-color: yellow; */
     height: 2em;
     clear: left;
 }
@@ -230,6 +280,7 @@ p{
 	margin-right: auto;
     text-indent:1.5em;
     text-align: justify;
+    color: rgb(80, 80, 80);
     /*margin-left: 150px;
     margin-right: 150px;*/
 }
@@ -240,15 +291,28 @@ img{
     width: 100%;
     height: auto;
 }
-header{
-    font-size: 2rem;    
-    text-align: center;
+header{    
     grid-row: 1;
     grid-column: 1/ span 2;
     display: block;
     height: 80px;
     border-bottom: .1px solid rgb(200,200,200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+header img{
+    height: 80%;
+    width: auto;
+}
+
+header h1{
+    font-size: 2rem;    
+    text-align: center;
+}
+
 /*考虑用某种方法把大项和小项区分开，可以类似professor网站那样，选中的项颜色更深*/
 nav{
     grid-row: 2;
@@ -288,7 +352,7 @@ nav li a {
 
 nav ul ul li a{
     color: rgb(170,170,170);
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 /* Change the link color on hover */
@@ -333,17 +397,32 @@ ol p{
 .exp li{
 	text-align: left;
 }
+
+.video-container{
+    position: relative;    
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    padding-top: 45%; /* 16:9 Aspect Ratio */
+}
+
+.youtube-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;    
+}
+
 footer{
     display: block;
     background-color: white;
     text-align: center;
     grid-row: 3;
-    grid-column: 1 / span 2;
-/*    position:absolute;
-    bottom:0px;
-    padding: 10px;
-    left: 0;
-    right: 0;*/
+    grid-column: 1 / span 2;    
+    margin-top: auto;
 }
 footer address{
     font-style: normal;
