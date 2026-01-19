@@ -1,65 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Jing Fan</title>
     <link rel="stylesheet" type="text/css" href="Styles/Global.css">
     <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
+
 <body>
     <header>
         <img src="Images/Logo.png">
-        <h1>Jing Fan</h1>      
+        <h1>Jing Fan</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="javascript:location.reload();">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="javascript: void(0);">Games</a>
-                <ul>
-                    <li class="nav-ul-text">Digital</li>
-                        <li><a href="Digital/Inkression.html">Inkression</a></li>
-                    	<li><a href="Digital/Trick-or-Trade.html">Trick or Trade</a></li>
-                    	<li><a href="Digital/Mr.D6-Has-A-Date.html">Mr.D6 Has A Date</a></li>
-                    	<li><a href="Digital/Our-Longest-Days.html">Our Longest Days</a></li>
-                        <li><a href="Digital/Get-in-the-Coop.html">Get in the Coop! (AR)</a></li>
-                        <li><a href="Digital/SAEUS.html">SAEUS</a></li>
-                        <li><a href="Digital/Frida-Wants-to-Play.html">Frida Wants to Play!</a></li>
-                        <li class="long-nav"><a href="Digital/A-Very-Very-Spooky-Welcome.html">A very VERY Spooky Welcome (VR)</a></li>
-                        <li><a href="Digital/Prison-Escape.html">Prison Escape</a></li>
-                        <!-- <li><a href="Digital/RIP.html">R.I.P.</a></li> -->
-                        <li><a href="Digital/Hero's-Journey.html">Hero's Journey</a></li>
-                    <li class="nav-ul-text">Analog</li>
-                        <li><a href="Physical/MONOPOLY2.html">MONOPOLY 2</a></li>
-                        <li><a href="Physical/Love-is-War.html">Love is War</a></li>
-                        <li><a href="Physical/Run.html">Run!</a></li>
-                        <li><a href="Physical/Trash.html">Trash</a></li>
-                        <li><a href="Physical/The-Carrot.html">The Carrot</a></li>
-                        <li><a href="Physical/Maze.html">Maze</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="javascript: void(0);">UI/UX</a>
-                <ul>
-                    <li><a href="UIUX/Hang-Out.html">Hang Out!</a></li>
-                    <li><a href="UIUX/SPRAY.html">SPRAY</a></li>
-                    <li><a href="UIUX/Musart.html">Musart</a></li>
-                </ul>
-            </li>
-            <!-- <li><a href="Illustrations.html">Illustrations</a></li> -->
-        </ul>
-    </nav>
+    <script src="nav.js"></script>
     <main>
         <div class="ui">
             <div class="container">
+                <p class="diagonal-text">Early Access!</p>
+                <a href="Digital/The-Hilltop-Funeral.html">
+                    <img src="Images/THFCover.png">
+                    <div class="overlay">
+                        <p class="diagonal-text">Early Access!</p>
+                        <div class="overlay-text">A physics game where you carry a casket with a dead body uphill</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <p class="diagonal-text">Wishlist!</p>
                 <a href="Digital/Inkression.html">
                     <img src="Images/InkressionCover.png">
                     <div class="overlay">
+                        <p class="diagonal-text">Wishlist!</p>
                         <div class="overlay-text">A narrative adventure game about a tattoo artist</div>
                     </div>
                 </a>
             </div>
-        	<div class="container">
+            <div class="container">
                 <a href="Digital/Trick-or-Trade.html">
                     <img src="Images/ToTcover.png">
                     <div class="overlay">
@@ -67,7 +44,7 @@
                     </div>
                 </a>
             </div>
-        	<div class="container">
+            <div class="container">
                 <a href="Digital/Mr.D6-Has-A-Date.html">
                     <img src="Images/D6cover.png">
                     <div class="overlay">
@@ -79,7 +56,8 @@
                 <a href="Physical/MONOPOLY2.html">
                     <img src="Images/MONOPOLY2cover.png">
                     <div class="overlay">
-                        <div class="overlay-text">A game of pure capitalism, manipulated markets, & white-collar crime</div>
+                        <div class="overlay-text">A game of pure capitalism, manipulated markets, & white-collar crime
+                        </div>
                     </div>
                 </a>
             </div>
@@ -119,7 +97,8 @@
                 <a href="Digital/Frida-Wants-to-Play.html">
                     <img src="Images/FWTPcover.png">
                     <div class="overlay">
-                        <div class="overlay-text">Frida wants to play with the owner witch during her final exam week</div>
+                        <div class="overlay-text">Frida wants to play with the owner witch during her final exam week
+                        </div>
                     </div>
                 </a>
             </div>
@@ -175,10 +154,11 @@
                 <a href="UIUX/SPRAY.html">
                     <img src="Images/Spcover.png">
                     <div class="overlay">
-                        <div class="overlay-text">Designed for people to share graffitis they discovered or created</div>
+                        <div class="overlay-text">Designed for people to share graffitis they discovered or created
+                        </div>
                     </div>
                 </a>
-            </div>            
+            </div>
             <div class="container">
                 <a href="Physical/Trash.html">
                     <img src="Images/Tcover.png">
@@ -204,19 +184,20 @@
                 </a>
             </div>
         </div>
-        
+
     </main>
     <footer>
         <address>
-            Jing Fan • 
+            Jing Fan •
             <script>
-                var recipient="bejcindy";
-                var domain="gmail.com";
-                var email_link="mailto:";
+                var recipient = "bejcindy";
+                var domain = "gmail.com";
+                var email_link = "mailto:";
                 document.write('<a href=\"' + email_link + recipient + '@' + domain + '\">');
                 document.write(recipient + '@' + domain + '</a>');
             </script>
         </address>
     </footer>
 </body>
+
 </html>
