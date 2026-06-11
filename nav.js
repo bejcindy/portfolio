@@ -11,13 +11,17 @@ document.write(`
                 <li><a href="${getBasePath()}Digital/Trick-or-Trade.html">Trick or Trade</a></li>
                 <li><a href="${getBasePath()}Digital/Mr.D6-Has-A-Date.html">Mr.D6 Has A Date</a></li>
                         <li><a href="${getBasePath()}Digital/Our-Longest-Days.html">Our Longest Days</a></li>
-                        <li><a href="${getBasePath()}Digital/Get-in-the-Coop.html">Get in the Coop! (AR)</a></li>
-                        <li><a href="${getBasePath()}Digital/SAEUS.html">SAEUS</a></li>
-                        <li><a href="${getBasePath()}Digital/Frida-Wants-to-Play.html">Frida Wants to Play!</a></li>
-                        <li class="long-nav"><a href="${getBasePath()}Digital/A-Very-Very-Spooky-Welcome.html">A very VERY Spooky Welcome (VR)</a></li>
-                        <li><a href="${getBasePath()}Digital/Prison-Escape.html">Prison Escape</a></li>
-                        <!-- <li><a href="${getBasePath()}Digital/RIP.html">R.I.P.</a></li> -->
+                        <li><a href="${getBasePath()}Digital/Get-in-the-Coop.html">Get in the Coop! (AR)</a></li>                        
+                        <li class="long-nav"><a href="${getBasePath()}Digital/A-Very-Very-Spooky-Welcome.html">A very VERY Spooky Welcome (VR)</a></li>                        
                         <li><a href="${getBasePath()}Digital/Hero's-Journey.html">Hero's Journey</a></li>
+                        
+                        <!-- COMMENTED OUT GAMES
+                            <li><a href="${getBasePath()}Digital/SAEUS.html">SAEUS</a></li>
+                            <li><a href="${getBasePath()}Digital/Frida-Wants-to-Play.html">Frida Wants to Play!</a></li>
+                            <li><a href="${getBasePath()}Digital/Prison-Escape.html">Prison Escape</a></li>
+                            <li><a href="${getBasePath()}Digital/RIP.html">R.I.P.</a></li> 
+                        -->
+
                     <li class="nav-ul-text">Analog</li>
                         <li><a href="${getBasePath()}Physical/MONOPOLY2.html">MONOPOLY 2</a></li>
                         <li><a href="${getBasePath()}Physical/Love-is-War.html">Love is War</a></li>

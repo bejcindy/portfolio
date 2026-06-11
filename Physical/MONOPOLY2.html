@@ -17,24 +17,41 @@
 
     <main>
         <h1>MONOPOLY 2</h1>
-        <div class="job">
+        <div class="job center-version">
             <p>Poker Card Game</p>
             <p>Game Designer</p>
         </div>
-        <div class="photo" align="middle">
-            <img src="Images/MONOPOLY21.png">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="Images/MONOPOLY21.png">
+            </div>
+            <div class="slide fade">
+                <img src="Images/MONOPOLY22.png">
+            </div>
+            <div class="slide fade">
+                <img src="Images/MONOPOLY23.png">
+            </div>
+            <div class="slide fade">
+                <img src="Images/MONOPOLY24.png">
+            </div>
+            <div class="slide fade">
+                <img src="Images/MONOPOLY25.png">
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
-        <div class="photo" align="middle">
-            <img src="Images/MONOPOLY22.png">
-        </div>
-        <div class="photo" align="middle">
-            <img src="Images/MONOPOLY23.png">
-        </div>
-        <div class="photo" align="middle">
-            <img src="Images/MONOPOLY24.png">
-        </div>
-        <div class="photo" align="middle">
-            <img src="Images/MONOPOLY25.png">
+
+        <!-- Navigation dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </main>
     <footer>
@@ -49,6 +66,7 @@
             </script>
         </address>
     </footer>
+    <script src="../slideshow.js"></script>
 </body>
 
 </html>
